@@ -17,7 +17,6 @@ class Solution(object):
         return not stack
 
 
-        print(solution.isValid("()[]{}"))  # Output: True
 
 # Test case 2: Invalid case
 print(Solution.isValid("(]"))  # Output: False
