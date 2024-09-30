@@ -16,34 +16,11 @@ class Solution(object):
                 return False
         return not stack
 
+# Create an instance of the Solution class
+solution = Solution()
 
-
-# Test case 2: Invalid case
-print(Solution.isValid("(]"))  # Output: False
-
-print(Solution.isValid("()[]{}"))  # Output: True
-
-# Test case 2: Invalid case
-print(Solution.isValid("(]"))  # Output: False
-
-# Test case 3: Another valid case
-print(Solution.isValid("({[]})"))  # Output: True
-
-# Test case 4: Unmatched opening bracket
-print(Solution.isValid("({[})"))  # Output: False
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-  
-
+# Test cases
+print(solution.isValid("()[]{}"))      # Output: True
+print(solution.isValid("(]"))          # Output: False
+print(solution.isValid("({[]})"))      # Output: True
+print(solution.isValid("({[})"))       # Output: False
