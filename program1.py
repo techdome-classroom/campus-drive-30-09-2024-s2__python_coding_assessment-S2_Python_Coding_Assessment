@@ -20,22 +20,22 @@ class Solution(object):
         print(solution.isValid("()[]{}"))  # Output: True
 
 # Test case 2: Invalid case
-print(solution.isValid("(]"))  # Output: False
+print(Solution.isValid("(]"))  # Output: False
 
-print(solution.isValid("()[]{}"))  # Output: True
+print(Solution.isValid("()[]{}"))  # Output: True
 
 # Test case 2: Invalid case
-print(solution.isValid("(]"))  # Output: False
+print(Solution.isValid("(]"))  # Output: False
 
 # Test case 3: Another valid case
-print(solution.isValid("({[]})"))  # Output: True
+print(Solution.isValid("({[]})"))  # Output: True
 
 # Test case 4: Unmatched opening bracket
-print(solution.isValid("({[})"))  # Output: False
+print(Solution.isValid("({[})"))  # Output: False
 
 # Test case 5: Empty string (valid)
-print(solution.isValid("")) 
-print(solution.isValid("")) 
+print(Solution.isValid("")) 
+print(Solution.isValid("")) 
 
 
 
