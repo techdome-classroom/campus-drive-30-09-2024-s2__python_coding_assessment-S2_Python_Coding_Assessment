@@ -17,6 +17,21 @@ class Solution(object):
         return not stack
 
 
+        print(solution.isValid("()[]{}"))  # Output: True
+
+# Test case 2: Invalid case
+print(solution.isValid("(]"))  # Output: False
+
+# Test case 3: Another valid case
+print(solution.isValid("({[]})"))  # Output: True
+
+# Test case 4: Unmatched opening bracket
+print(solution.isValid("({[})"))  # Output: False
+
+# Test case 5: Empty string (valid)
+print(solution.isValid("")) 
+
+
 
 
 
