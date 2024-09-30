@@ -19,8 +19,11 @@ class Solution(object):
 # Create an instance of the Solution class
 solution = Solution()
 
-# Test cases
+# Test cases with the appropriate string argument
 print(solution.isValid("()[]{}"))      # Output: True
 print(solution.isValid("(]"))          # Output: False
 print(solution.isValid("({[]})"))      # Output: True
 print(solution.isValid("({[})"))       # Output: False
+print(solution.isValid(""))             # Output: True
+print(solution.isValid("((("))          # Output: False
+print(solution.isValid("[{()}]"))      # Output: True
