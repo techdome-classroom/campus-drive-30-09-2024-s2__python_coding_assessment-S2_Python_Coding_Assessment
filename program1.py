@@ -33,9 +33,7 @@ print(Solution.isValid("({[]})"))  # Output: True
 # Test case 4: Unmatched opening bracket
 print(Solution.isValid("({[})"))  # Output: False
 
-# Test case 5: Empty string (valid)
-print(Solution.isValid("")) 
-print(Solution.isValid("")) 
+
 
 
 
