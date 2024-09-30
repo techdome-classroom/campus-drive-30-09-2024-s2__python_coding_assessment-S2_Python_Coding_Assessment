@@ -1,30 +1,25 @@
 class Solution(object):
     def romanToInt(self, s):
-        sym = {
-        'I': 1,
-        'V': 5,
-        'X': 10,
-        'L': 50,
-        'C': 100,
-        'D': 500,
-        'M': 1000
-    }
+        roman_map = {
+            'I': 1,
+            'V': 5,
+            'X': 10,
+            'L': 50,
+            'C': 100,
+            'D': 500,
+            'M': 1000
+        }
 
-    result = 0
-    i = 0
+        total = 0
+        prev_value = 0
+        for char in reversed(s):
+            current_value = roman_map[char]
+            if current_value < prev_value:
+                total -= current_value
+            else:
+                total += current_value
+            prev_value = current_value
 
-    while i < len(s):
-        cur = sym[s[i]]
-        next = sym[s[i + 1]] if i + 1 < len(s) else 0
-
-        if cur < next:
-            result += next - cur
-            i += 2
-        else:
-            result += cur
-            i += 1
-
-    return result
-
+        return total
 
 
