@@ -16,7 +16,7 @@ class Solution(object):
                 return False
         return not stack
 
-# Create an instance of the Solution class
+
 solution = Solution()
 
 
